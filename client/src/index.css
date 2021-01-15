@@ -1,0 +1,43 @@
+html, #root {
+  height: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: ApexNewBook;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "ApexNewBook";
+  src: local("ApexNewBook"), url(./fonts/ApexNew-Book.otf) format("truetype");
+}
+@font-face {
+  font-family: "ApexNewBookItalic";
+  src: local("ApexNewBookItalic"), url(./fonts/ApexNew-BookItalic.otf) format("truetype");
+}
+@font-face {
+  font-family: "ApexNewMedium";
+  src: local("ApexNewMedium"), url(./fonts/ApexNew-Medium.otf) format("truetype");
+}
+@font-face {
+  font-family: "ApexNewBold";
+  src: local("ApexNewBold"), url(./fonts/ApexNew-V2-Bold.otf) format("truetype");
+}
+@font-face {
+  font-family: "ApexNewBoldItalic";
+  src: local("ApexNewBoldItalic"), url(./fonts/ApexNew-V2-BoldItalic.otf) format("truetype");
+}

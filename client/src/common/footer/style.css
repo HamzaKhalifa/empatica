@@ -1,0 +1,59 @@
+.footer {
+  width: 100%;
+}
+
+.footer__buttons_container {
+  border-bottom: 1px solid;
+}
+
+.footer_buttons_container__centralized {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__button {
+  font-size: 25px;
+  text-decoration: none;
+  padding: 30px 0px;
+}
+
+.copyright {
+  padding: 30px;
+  margin: 0px;
+  font-size: 20px;
+  font-family: 'ApexNewBook';
+}
+
+.language_container {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.iconify {
+  background: url('https://api.iconify.design/mdi-earth.svg') no-repeat center center / contain;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  .footer_buttons_container__centralized {
+    width: 200px;
+  }
+
+  .copyright {
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    margin-top: 15px;
+  }
+
+  .footer__button {
+    font-size: 20px;
+  }
+}

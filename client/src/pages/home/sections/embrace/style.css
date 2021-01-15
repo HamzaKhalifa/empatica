@@ -1,0 +1,77 @@
+.embrace_container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 0px;
+  padding: 90px 30px;
+  justify-content: flex-start;
+}
+
+.embrace__image {
+  /* To help with editing on browser dev tools */
+}
+
+.embrace__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.embrace_content__image {
+  /* To help with editing on browser dev tools */
+}
+
+.embrace_content__title {
+  text-align: left;
+  font-family: 'ApexNewBook';
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  max-width: 415px;
+}
+
+.embrace_content__paragraph {
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  font-family: 'ApexNewMedium';
+  margin-bottom: 40px;
+  max-width: 380px;
+}
+
+@media screen and (max-width: 760px) {
+  .embrace_container {
+    flex-direction: column;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 50px;
+    margin-bottom: 25px;
+    padding-bottom: 0px;
+  }
+
+  .embrace__content {
+    align-items: center;
+  }
+
+  .embrace_content__title {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .embrace_content__paragraph {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .embrace__image {
+    margin-bottom: 55px;
+    width: 80%;
+  }
+}

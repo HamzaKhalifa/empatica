@@ -1,0 +1,74 @@
+.hero_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_container__image {
+  position: absolute;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  z-index: 1;
+  margin-bottom: 100px;
+  max-width: 1000px;
+}
+
+.hero_content__title {  
+  color: white;
+  font-size: 42px;
+  text-align: left;
+  max-width: 500px;
+  font-family: ApexNewBook;
+}
+
+.hero_content__catchphrase {
+  color: white;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: ApexNewMedium;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1150px) {
+  .hero_container {
+    background-position: 50% 0px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .hero__content {
+    align-items: center;
+  }
+
+  .hero_content__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .hero_content__catchphrase {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .hero_container {
+    background-position: 70% 0px;
+    height: 430px;
+  }
+
+  .hero__content {
+    margin-bottom: 30px;
+  }
+}
