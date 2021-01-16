@@ -5,7 +5,7 @@ import { deleteOrderRequest } from '../../../store/orders/actionCreators';
 import Colors from '../../../theme/colors';
 import Button from '../../../components/button';
 
-import './style.css';
+import './style.scss';
 
 interface IOrdersList {
   orders: IOrder[]

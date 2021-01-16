@@ -4,7 +4,7 @@ import Colors from '../../theme/colors';
 import { Link } from 'react-router-dom';
 import useWindowSize, { IWindowSize } from '../../custom-hooks/useWindowSize';
 
-import './style.css';
+import './style.scss';
 
 const Footer: React.FC = () => {
   const size: IWindowSize = useWindowSize();

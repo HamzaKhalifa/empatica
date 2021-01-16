@@ -8,7 +8,7 @@ import Login from './pages/login';
 
 import store from './store';
 
-import './App.css';
+import './App.scss';
 
 const App: React.FC = () => {
   return (

@@ -10,7 +10,7 @@ import FloatingButton from '../../components/floating-button';
 import Colors from '../../theme/colors';
 import Button from '../../components/button';
 
-import './style.css';
+import './style.scss';
 import { logoutRequest } from '../../store/user/actionCreators';
 
 const UserInformation: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {

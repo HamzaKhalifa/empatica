@@ -4,7 +4,7 @@ import Button from '../../../../components/button';
 import Colors from '../../../../theme/colors';
 import useWindowSize, { IWindowSize } from '../../../../custom-hooks/useWindowSize';
 
-import './style.css';
+import './style.scss';
 
 const Hero: React.FC = () => {
   const size: IWindowSize = useWindowSize();

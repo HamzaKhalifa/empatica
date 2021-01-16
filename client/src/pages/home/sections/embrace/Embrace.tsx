@@ -4,7 +4,7 @@ import Button from '../../../../components/button';
 import Colors from '../../../../theme/colors';
 import useWindowSize, { IWindowSize } from '../../../../custom-hooks/useWindowSize';
 
-import './style.css';
+import './style.scss';
 
 const RenderImage: React.FC = () => <img src='/images/embrace.jpg' className="embrace__image" alt=''/>;
 

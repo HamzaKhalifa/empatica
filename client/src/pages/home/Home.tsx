@@ -6,7 +6,7 @@ import Embrace from './sections/embrace';
 import Footer from '../../common/footer';
 import FloatingButton from '../../components/floating-button';
 
-import './style.css';
+import './style.scss';
 
 import { IApplicationState } from '../../store';
 

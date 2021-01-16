@@ -10,7 +10,7 @@ import Colors from '../../theme/colors';
 import Footer from '../../common/footer';
 import FloatingButton from '../../components/floating-button';
 
-import './style.css';
+import './style.scss';
 
 const Login: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
 

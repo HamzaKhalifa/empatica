@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import colors from '../../theme/colors';
 
-import './style.css';
+import './style.scss';
 
 interface IFloatingButton {
   text: string,
