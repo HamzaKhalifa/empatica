@@ -26,7 +26,6 @@ const setOrder = (order: IOrder) => ({
 export const getOrderRequest = (orderId: number) => (dispatch: any, state: IApplicationState) => {
   axios.get<any, AxiosResponse<any>>(`${baseUrl}orders/${orderId}`)
     .then(response => {
-      console.log(response);
       dispatch(setOrder(response.data.order));
     }).catch(error => {
       console.log('error', error);

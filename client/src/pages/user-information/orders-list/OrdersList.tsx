@@ -56,8 +56,7 @@ const OrdersList: React.FC<IOrdersList> = (props: IOrdersList) => {
 
     return result;
   }, [props.orders])
-
-  console.log('computed values', computedValuesMap.get(1));
+  
   return (
     <div className="orders_list">
       <h2>Orders List</h2>

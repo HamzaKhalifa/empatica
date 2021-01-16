@@ -23,7 +23,6 @@ const setOrder: Reducer = (state: OrdersState, action) => {
 const deleteOrder: Reducer = (state: OrdersState, action) => {
   // filter returns a new object (no need to explicitly make a new array to maintain redux's state immutability)
   const newOrders = state.orders.filter(order => order.id !== action.payload);
-  console.log('new orders', newOrders);
   return {
     ...state,
     orders: newOrders
