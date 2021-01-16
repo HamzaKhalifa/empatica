@@ -20,7 +20,7 @@ const UserInformation: React.FC<RouteComponentProps> = (props: RouteComponentPro
 
   useEffect(() => {
     if (userState.user.id === -1) props.history.push('/login');
-  }, [userState])
+  }, [userState, props.history])
 
   const handleLogout = () => {
     dispatch(logoutRequest());
