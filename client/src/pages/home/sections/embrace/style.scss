@@ -6,39 +6,40 @@
   margin-bottom: 0px;
   padding: 90px 30px;
   justify-content: flex-start;
-}
 
-.embrace__image {
-  /* To help with editing on browser dev tools */
-}
 
-.embrace__content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .embrace__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-.embrace_content__image {
-  /* To help with editing on browser dev tools */
-}
+    .embrace__image {
+      /* To help with editing on browser dev tools */
+    }
 
-.embrace_content__title {
-  text-align: left;
-  font-family: 'ApexNewBook';
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-size: 32px;
-  max-width: 415px;
-}
+    .embrace_content__image {
+      /* To help with editing on browser dev tools */
+    }
 
-.embrace_content__paragraph {
-  text-align: left;
-  line-height: 30px;
-  font-size: 18px;
-  font-family: 'ApexNewMedium';
-  margin-bottom: 40px;
-  max-width: 380px;
+    .embrace_content__title {
+      text-align: left;
+      font-family: 'ApexNewBook';
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 32px;
+      max-width: 415px;
+    }
+
+    .embrace_content__paragraph {
+      text-align: left;
+      line-height: 30px;
+      font-size: 18px;
+      font-family: 'ApexNewMedium';
+      margin-bottom: 40px;
+      max-width: 380px;
+    }
+  }
 }
 
 @media screen and (max-width: 760px) {
