@@ -1,3 +1,8 @@
+## Live version 
+
+Live version is deployed on heroku under this link: 
+https://empatica.herokuapp.com/
+
 ## Installation
 
 Starting from the root of the project on a terminal, type the following command:
