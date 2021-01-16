@@ -20,3 +20,19 @@ Then run this command to start the container:
 ```docker container run --publish 3000:3000 --publish 5000:5000 --name empatica empatica```
 
 Then visit "http://localhost:3000/" on your browser and you are all set! 
+
+## Work made:
+
+1) The home page as figured in the design spec
+2) The login page and functionality. 
+3) The login controlled user information page.
+4) The orders list with their computed information and the ability to delete an order. 
+5) The multiplatform support with Dockfile
+
+I have used: 
+
+1) Redux state management library for a better management of the global state of the application and the ability to separate actions and API calls from components with redux-thunk. 
+2) Typescript for consistent and less error prone code 
+3) A proxy in the dev environment to get rid of CORS problems. This is not needed for the production code since they are both hosted under the same origin: https://empatica.herokuapp.com/
+4) Only functional components and hooks to follow latest React trends and stay consistent and faithful to Javascript and Redux functional programming (avoiding class components as much as possible)
+5) A custom hook to detect mobile views for some types of logic that can't be applied with CSS alone. 
