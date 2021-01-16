@@ -11,7 +11,7 @@ const RenderImage: React.FC = () => <img src='/images/embrace.jpg' className="em
 const Embrace: React.FC = () => {
   const size: IWindowSize = useWindowSize();
 
-  const isMobile = size.width && size.width <= 760;
+  const isMobile = size.width && size.width <= 810;
 
   return (
     <div className="embrace_container">
