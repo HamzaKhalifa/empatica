@@ -5,21 +5,27 @@ Starting from the root of the project on a terminal, type the following command:
 
 ## Execution
 
-This App will have to run the backend and the client together (concurrently). This is achievable via a single command using the "concurrently" module. I made a shortcut for it in package.json, so all you'll have to run is: 
+This App will have to run the backend and the client together (concurrently). This is achievable via a single command using the "concurrently" module. I made a shortcut script for it in package.json, so all you'll have to run is: 
 
 ```npm run dev```
 
 ## Installation using docker
 
-On the root of the project, run the following command to build docker image
+On the root of the project, run the following command to build the docker image
 
 ```docker build -t empatica .```
 
-Then run this command to start the container: 
+Then run this command to start the container once the image building is finished: 
 
 ```docker container run --publish 3000:3000 --publish 5000:5000 --name empatica empatica```
 
-Then visit "http://localhost:3000/" on your browser and you are all set! 
+NOTE: To make sure that your image was succinctly built, run ```docker image ls -a``` and look for an image with the tag "empatica". 
+
+Once the docker container starts running, wait for a bit more time for webpack to run and then visit:
+"http://localhost:3000/" on your browser.
+Also, don't use --detach to know exactly when webpack project has finished its setup.
+
+You are all set! 
 
 ## Work made:
 
