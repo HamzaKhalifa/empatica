@@ -3,8 +3,8 @@ import { useSelector } from 'react-redux';
 
 import Hero from './sections/hero';
 import Embrace from './sections/embrace';
-import Footer from '../../common/footer';
 import FloatingButton from '../../components/floating-button';
+import withFooter from '../../hoc/with-footer';
 
 import './style.scss';
 
@@ -19,10 +19,9 @@ const Home: React.FC = () => {
         <Hero />
         <Embrace />
       </div>
-      <Footer />
       <FloatingButton text={id === - 1 ? 'Login' : 'Profile'} to='/login' />
     </div>
   )
 }
 
-export default Home
+export default withFooter(Home);

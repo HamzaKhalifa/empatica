@@ -7,7 +7,7 @@ import { IApplicationState } from '../../store';
 import { UserState } from '../../store/user/types';
 import CustomButton from '../../components/custom-button';
 import Colors from '../../theme/colors';
-import Footer from '../../common/footer';
+import withFooter from '../../hoc/with-footer';
 import FloatingButton from '../../components/floating-button';
 
 import './style.scss';
@@ -21,7 +21,7 @@ const Login: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
 
   useEffect(() => {
     if (userState.user.id !== -1) props.history.push('/user-information');
-  }, [userState])
+  }, [userState, props.history])
 
   return (
     <div className='login_container'>
@@ -40,9 +40,8 @@ const Login: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
         {userState.loading && <span>Loading...</span>}
       </div>
       <FloatingButton text='Home' to='/' />
-      <Footer />
     </div>
   )
 }
 
-export default Login
+export default withFooter(Login);

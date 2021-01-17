@@ -5,10 +5,10 @@ import { OrdersState } from '../../store/orders/types';
 import { IApplicationState } from '../../store';
 import { RouteComponentProps } from 'react-router-dom';
 import OrdersList from './orders-list';
-import Footer from '../../common/footer';
 import FloatingButton from '../../components/floating-button';
 import Colors from '../../theme/colors';
 import CustomButton from '../../components/custom-button';
+import withFooter from '../../hoc/with-footer';
 
 import './style.scss';
 import { logoutRequest } from '../../store/user/actionCreators';
@@ -47,9 +47,8 @@ const UserInformation: React.FC<RouteComponentProps> = (props: RouteComponentPro
       </div>
       
       <FloatingButton text='Home' to='/' />
-      <Footer />
     </div>
   )
 }
 
-export default UserInformation
+export default withFooter(UserInformation);
