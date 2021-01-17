@@ -53,3 +53,5 @@ I could have used React's Context API but I still prefer redux because this one 
 4) Only functional components and hooks to follow latest React trends and stay consistent and faithful to Javascript and Redux functional programming (avoiding class components as much as possible)
 
 5) A custom hook to detect mobile views for some types of logic that can't be applied with CSS alone. 
+
+6) A custom hook to progressively load the main hero image
