@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 
 import './style.scss';
 
-interface IButton {
-  text: string,
+interface ICustomButton {
   textColor: string,
   backgroundColor: string,
   hoverTextColor: string,
@@ -11,10 +10,11 @@ interface IButton {
   horizontalPadding: number,
   verticalPadding: number,
   onClick?: () => void,
-  customStyle?: any
+  customStyle?: any,
+  children?: any
 }
 
-const Button: React.FC<IButton> = (props: IButton) => {
+const CustomButton: React.FC<ICustomButton> = (props: ICustomButton) => {
   const [hovered, setHovered] = useState(false);
 
   const onMouseOver = () => setHovered(true);
@@ -37,9 +37,9 @@ const Button: React.FC<IButton> = (props: IButton) => {
       onMouseLeave={onMouseLeave}
       onClick={props.onClick}
     >
-      {props.text}
+      {props.children}
     </button>
   )
 }
 
-export default React.memo(Button);
+export default React.memo(CustomButton);

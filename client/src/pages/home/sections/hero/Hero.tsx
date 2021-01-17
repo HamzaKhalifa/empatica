@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from '../../../../components/button';
+import CustomButton from '../../../../components/custom-button';
 import Colors from '../../../../theme/colors';
 import useWindowSize, { IWindowSize } from '../../../../custom-hooks/useWindowSize';
 
@@ -15,15 +15,14 @@ const Hero: React.FC = () => {
     <div style={{ backgroundImage: `url("${backgroundImage}")` }} className='hero_container'>
       <div className="hero__content">
         <h2 className='hero_content__title'>Smart technology for people living with epilepsy</h2>
-        <Button 
+        <CustomButton 
           backgroundColor='transparent' 
           textColor={Colors.white} 
           hoverBackgroundColor={Colors.white}
           hoverTextColor={Colors.black}
-          text='Buy Now' 
           horizontalPadding={60} 
           verticalPadding={15} 
-        />
+        >Buy Now</CustomButton>
         <span className="hero_content__catchphrase">Comes with a 30-day Free trial subscription</span>
       </div>
     </div>

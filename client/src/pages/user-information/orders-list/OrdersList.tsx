@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import IOrder from '../../../store/orders/types/IOrder';
 import { deleteOrderRequest } from '../../../store/orders/actionCreators';
 import Colors from '../../../theme/colors';
-import Button from '../../../components/button';
+import CustomButton from '../../../components/custom-button';
 
 import './style.scss';
 
@@ -81,17 +81,16 @@ const OrdersList: React.FC<IOrdersList> = (props: IOrdersList) => {
             <span className='order_element'>{computedValuesMap.get(order.id)?.totalDiscount}$</span>
             <span className='order_element'>{computedValuesMap.get(order.id)?.totalAfterDiscount}$</span>
             <span className='order_element'>
-              <Button 
+              <CustomButton 
                 customStyle={{ fontSize: 12 }}
                 backgroundColor={Colors.red}
                 hoverBackgroundColor={Colors.white}
                 hoverTextColor={Colors.red}
-                text='Delete'
                 textColor={Colors.white}
                 horizontalPadding={10}
                 verticalPadding={10}
                 onClick={() => {deleteOrder(order.id)}}
-              />
+              >Delete</CustomButton>
             </span>
           </div>
         ))}

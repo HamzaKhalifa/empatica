@@ -5,7 +5,7 @@ import { RouteComponentProps } from 'react-router-dom';
 import { login } from '../../store/user/actionCreators';
 import { IApplicationState } from '../../store';
 import { UserState } from '../../store/user/types';
-import Button from '../../components/button';
+import CustomButton from '../../components/custom-button';
 import Colors from '../../theme/colors';
 import Footer from '../../common/footer';
 import FloatingButton from '../../components/floating-button';
@@ -26,16 +26,15 @@ const Login: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
   return (
     <div className='login_container'>
       <div className='login_form'>
-        <Button 
+        <CustomButton 
           backgroundColor='transparent' 
           textColor={Colors.black} 
           hoverBackgroundColor={Colors.black}
           hoverTextColor={Colors.white}
-          text='LOGIN' 
           horizontalPadding={60} 
           verticalPadding={15} 
           onClick={handleLogin}
-        />
+        >Login</CustomButton>
         <br/>
         {userState.error && <span>{userState.error}</span>}
         {userState.loading && <span>Loading...</span>}

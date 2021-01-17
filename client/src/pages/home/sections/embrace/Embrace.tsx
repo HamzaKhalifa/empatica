@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from '../../../../components/button';
+import CustomButton from '../../../../components/custom-button';
 import Colors from '../../../../theme/colors';
 import useWindowSize, { IWindowSize } from '../../../../custom-hooks/useWindowSize';
 
@@ -23,15 +23,14 @@ const Embrace: React.FC = () => {
         <h2 className='embrace_content__title'>Your companion for epilepsy management</h2>
         <p className='embrace_content__paragraph'>The Embrace watch uses advanced learning algorithms to identify tonic-cloning seizures and send alerts to caregivers. It also provides sleep, rest and physical activity analysis.</p>
         {isMobile && <RenderImage />}
-        <Button 
+        <CustomButton 
           backgroundColor={Colors.red}
           hoverBackgroundColor={Colors.white}
           hoverTextColor={Colors.red}
-          text='Discover Embrace Features'
           textColor={Colors.white}
           horizontalPadding={40}
           verticalPadding={15}
-        />
+        >Discover Embrace Features</CustomButton>
       </div>
       {!isMobile && <RenderImage />}
     </div>

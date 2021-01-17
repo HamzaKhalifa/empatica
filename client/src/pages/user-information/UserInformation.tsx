@@ -8,7 +8,7 @@ import OrdersList from './orders-list';
 import Footer from '../../common/footer';
 import FloatingButton from '../../components/floating-button';
 import Colors from '../../theme/colors';
-import Button from '../../components/button';
+import CustomButton from '../../components/custom-button';
 
 import './style.scss';
 import { logoutRequest } from '../../store/user/actionCreators';
@@ -35,16 +35,15 @@ const UserInformation: React.FC<RouteComponentProps> = (props: RouteComponentPro
         <span className='user_info'>Email {userState.user.email}</span> 
         <OrdersList orders={ordersState.orders} />
 
-        <Button 
+        <CustomButton 
           backgroundColor={Colors.red}
           hoverBackgroundColor={Colors.white}
           hoverTextColor={Colors.red}
           textColor={Colors.white}
-          text='Logout' 
           horizontalPadding={60} 
           verticalPadding={15} 
           onClick={handleLogout}
-        />
+        >Logout</CustomButton>
       </div>
       
       <FloatingButton text='Home' to='/' />
